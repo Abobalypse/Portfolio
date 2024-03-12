@@ -1,0 +1,271 @@
+:root {
+    --primary-color: #222831;
+    --primary-color2: #00ADB5;
+    --secondary-color: #00FFF5;
+    --background-color: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'sans-serif';
+    transition-duration: 200ms;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 14px;
+}
+
+.darkerText {
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+    text-decoration: underline;
+}
+
+header, main, footer {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+p {
+    font-size: 1.05em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+nav {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+main, section, .nameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 64px;
+    padding-bottom: 64px;
+}
+
+section {
+    gap: 48px;
+}
+
+.gitLink, .linkLink {
+    text-decoration: none;
+    color: var(--primary-color2);
+}
+
+.gitLink:hover {
+    color:var(--secondary-color);
+}
+
+.linkLink:hover{
+    color: var(--secondary-color);
+}
+
+.nameContainer {
+    gap: 8px;
+    cursor: pointer;
+}
+
+.statsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 36px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.personal {
+    display: flex;
+    width: 125px;
+    height: 150px;
+    gap: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-right: 10%;
+}
+
+.personal img {
+    border-radius: 20px;
+}
+
+.extra:visited, a {
+    color: #C0C0C0;
+    position: relative;
+}
+
+.extra:hover  a {
+    opacity: 0.9;
+    color: #EBEBEB;
+    font-size: 150%;
+}
+
+.stats div i {
+    font-size: 1.4em;
+}
+
+.stats div p {
+    place-items: center;
+    min-width: 60px;
+}
+
+.outreach {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    width: fit-content;
+    margin-right: auto;
+}
+
+.outreach:hover {
+    opacity: 0.5;
+}
+
+.outreach i {
+    transform: rotate(-45deg);
+}
+
+.headerText {
+    margin-bottom: 24px;
+}
+
+.latestProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.projectItem {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.projectItem p {
+    display: flex;
+    gap: 10px;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: 500px;
+    width: 750px;
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+}
+
+.project2 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: 500px;
+    width: 750px;
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+}
+
+.project3 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: 500px;
+    width: 750px;
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+}
+
+.gitHub {
+    margin-left: 36px;
+    width: 75px;
+    height: 26px;
+    cursor: pointer;
+    background-color: #00FFF5;
+    border-radius: 20px;
+    gap: 16px;
+}
+
+.gitHub:hover {
+    background-color: #393E46;
+    color: #00FFF5;
+    box-shadow: 5px 15px 25px lightgray;
+}
+
+.codePen {
+    text-align: center;
+    background-color: #00FFF5;
+    border-radius: 20px;
+    height: 26px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.codePen:hover {
+    background-color: #393E46;
+    color: #00FFF5;
+    box-shadow: 5px 15px 25px lightgray;
+}
+
+.codeLink {
+    text-decoration: none;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+
+@media (min-width: 640px) {
+    .statsContainer {
+        flex-direction: row;
+    }
+    
+    .stats {
+        gap: 0px;
+    }
+
+    .aboutMe {
+        width: 80%;
+        margin-right: auto;
+    }
+}
