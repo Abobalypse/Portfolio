@@ -192,6 +192,7 @@ section {
     max-width: 95%;
     max-height: 95%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .project2 {
@@ -203,6 +204,7 @@ section {
     max-width: 95%;
     max-height: 95%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .project3 {
@@ -214,6 +216,7 @@ section {
     max-width: 95%;
     max-height: 95%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .gitHub {
